@@ -1,0 +1,93 @@
+* {box-sizing: border-box}
+
+html, body {
+    height: 100%;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+/* Main */
+main {
+    margin-top: 2rem;
+    background-color: purple;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem .5rem black;
+}
+
+/* Search */
+.search {margin-bottom: 2rem;}
+
+.search input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+/* User card */
+article {
+    color: white;
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+    font-size: 1.2rem;
+    visibility: hidden;
+    height: 0;
+}
+
+/* Avatar */
+article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    border: 3px solid gold;
+    border-radius: 50%;
+    box-shadow: .5rem .5rem .5rem black;
+}
+
+/* User textual info */
+article h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+article p {
+    text-align: center;
+}
+
+/* Numeric info */
+.user-data {margin-bottom: 2rem;}
+.user-data ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Repo links */
+.last-repos {
+    text-align: center;
+    visibility: hidden;
+    height: 0;
+}
+
+.last-repos a {
+    text-decoration: none;
+    color: white;
+    background-color: goldenrod;
+    padding: .5rem;
+    font-size: .8rem;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem .5rem black;
+    margin: .4rem;
+    display: inline-block;
+}
